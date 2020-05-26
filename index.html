@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        #layout{
+            border: 2px solid black;
+            width: 70% ;
+            height: 160vh;
+            background: lightgray;
+            margin: 0 auto;
+        }
+        form{
+            float: left;
+            width: 70%;
+        }
+        hr{
+            width: 60%;
+        }
+        span{
+            color: red;
+        }
+        select{
+            width: 60px;
+        }
+        #first, #last, #email{
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-right: 20px;
+
+        }
+        #fields{
+            float: left;
+            width: 30%;
+        }
+        #fno{
+            margin-top: 50px;
+        }
+        #flight{
+            margin-top: 50px;
+        }
+        #fields label{
+            display: block;
+            padding: 15px;
+        }
+        #values{
+            float: left;
+            width: 70%;
+        }
+        #values input{
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px; */
+            border: 1px solid lightslategray;
+            border-radius: 5px;
+        }
+        #option{
+            width: 250px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #guest{
+            margin-top: 20px;
+        }
+        #time{
+            margin-top: 25px;
+            /* margin-bottom: 25px; */
+        }
+        .radio{
+            margin-top: 30px;
+        }
+        textarea{
+            margin-top: 40px;
+        }
+
+        button, #submit{
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+        }
+        #val{
+            margin-top: 50px;
+        }
+        #lname{
+            padding-left: 120px;
+        }
+        #hours{
+            padding-left: 150px;
+        }
+        #min{
+            padding-left: 20px;
+        }
+        #day{
+            padding-left: 20px;
+        }
+        #year{
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="layout">
+    <h1>Hotel Booking</h1>
+    <form action="" onsubmit="validateForm()">
+        <div id="fields">
+            <label for="name">Name <span>*</span></label> <br> 
+            <label for="email">Email<span>*</span></label><br>
+            <label for="room type">Room Type</label><br>
+            <label for="guest">Number of Guests<span>*</span></label><br>
+            <label for="time">Arrival Date & Time<span>*</span></label><br>
+            <label for="departure">Departure Date<span>*</span></label><br>
+            <label for="departure">Free Pickup<span>*</span></label><br>
+            <label for="fnumber" id="fno">Flight Number</label><br>
+            <label for="equests">Special Requests</label>
+        </div>
+        <div id="values">
+            <input type="text" id="first">
+            <input type="text" id="last"><br>
+            <label for="">First Name</label>
+            <label for="" id="lname">Last Name</label><br>
+
+            <input type="email" name="" id="email" placeholder="ex:myname@example.com"><br>
+            <label for="" id="example">example@example.com</label><br>
+            <select id="option">
+                <option value=""></option>
+                <option value="">Standard Room (1 to 2 People)</option>
+                <option value="">Family Room (1 to 4 People)</option>
+                <option value="">Private Room (1 to 3 People)</option>
+                <option value="">Mix Dorm Room (6 People)</option>
+                <option value="">Female Dorm Room (6 People)</option>
+                <option value="">Female Dorm Room (6 People)</option>
+                <option value="">Male Dorm Room (6 People)option>
+            </select> <br>
+            
+            <input type="number" name="" id="guest"><br>
+            <input type="date" name="" id="date">
+            <select id="val">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="0">2</option>
+                <option value="1">3</option>
+                <option value="0">4</option>
+                <option value="1">5</option>
+                <option value="0">6</option>
+                <option value="1">7</option>
+                <option value="0">8</option>
+                <option value="1">9</option>
+                <option value="0">10</option>
+                <option value="1">11</option>
+                <option value="0">12</option>
+                
+            </select>
+            
+            <select>
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="0">2</option>
+                <option value="1">3</option>
+                <option value="0">4</option>
+                <option value="1">5</option>
+                <option value="0">6</option>
+                <option value="1">7</option>
+                <option value="0">8</option>
+                <option value="1">9</option>
+                <option value="0">10</option>
+                <option value="1">11</option>
+                <option value="0">12</option>
+                <option value="0">13</option>
+                <option value="1">14</option>
+                <option value="0">15</option>
+                <option value="1">16</option>
+                <option value="0">17</option>
+                <option value="1">18</option>
+                <option value="0">19</option>
+                <option value="1">20</option>
+                <option value="0">21</option>
+                <option value="1">22</option>
+                <option value="0">23</option>
+                <option value="1">24</option>
+                <option value="0">25</option>
+                <option value="0">26</option>
+                <option value="1">26</option>
+                <option value="0">27</option>
+                <option value="1">28</option>
+                <option value="0">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+                <option value="0">32</option>
+                <option value="1">33</option>
+                <option value="0">34</option>
+                <option value="1">35</option>
+                <option value="0">36</option>
+                <option value="1">37</option>
+                <option value="0">38</option>
+                <option value="1">39</option>
+                <option value="0">40</option>
+                <option value="1">41</option>
+                <option value="0">42</option>
+                <option value="0">43</option>
+                <option value="1">44</option>
+                <option value="0">45</option>
+                <option value="1">46</option>
+                <option value="0">47</option>
+                <option value="1">48</option>
+                <option value="0">49</option>
+                <option value="1">50</option>
+                <option value="0">51</option>
+                <option value="1">52</option>
+                <option value="0">53</option>
+                <option value="1">54</option>
+                <option value="0">55</option>
+                <option value="0">56</option>
+                <option value="1">57</option>
+                <option value="0">58</option>
+                <option value="0">59</option>
+                <option value="1">60</option>
+            </select> 
+            
+            <select>
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select><br>
+            <label for="" id="hours">Hours</label>
+            <label for="" id="min">Minutes</label><br>
+            <select id="time">
+                <option value="1"></option>
+                <option value="0">2</option>
+                <option value="1">3</option>
+                <option value="0">4</option>
+                <option value="1">5</option>
+                <option value="0">6</option>
+                <option value="1">7</option>
+                <option value="0">8</option>
+                <option value="1">9</option>
+                <option value="0">10</option>
+                <option value="1">11</option>
+                <option value="0">12</option>
+            </select>
+            <select>
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="0">2</option>
+                <option value="1">3</option>
+                <option value="0">4</option>
+                <option value="1">5</option>
+                <option value="0">6</option>
+                <option value="1">7</option>
+                <option value="0">8</option>
+                <option value="1">9</option>
+                <option value="0">10</option>
+                <option value="1">11</option>
+                <option value="0">12</option>
+                <option value="0">13</option>
+                <option value="1">14</option>
+                <option value="0">15</option>
+                <option value="1">16</option>
+                <option value="0">17</option>
+                <option value="1">18</option>
+                <option value="0">19</option>
+                <option value="1">20</option>
+                <option value="0">21</option>
+                <option value="1">22</option>
+                <option value="0">23</option>
+                <option value="1">24</option>
+                <option value="0">25</option>
+                <option value="0">26</option>
+                <option value="1">26</option>
+                <option value="0">27</option>
+                <option value="1">28</option>
+                <option value="0">29</option>
+                <option value="1">30</option>
+                
+            </select>
+            <select>
+                <option value="0">2020</option>
+                <option value="1">2021</option>
+            </select> <br>
+            <label for="">Month</label>
+            <label for="" id="day">Day</label>
+            <label for="" id="year">Year</label> <br>
+
+            <input type="radio" name="" class="radio"> Yes Please! - Pick me up on arrival <br>
+            <input type="radio" name="" class="radio"> No Thanks - I will make my own way there <br>
+
+            <input type="text" id="flight"><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br> 
+            <input type="submit" value="Submit" id="submit">
+
+            <button>Reset</button>
+        </div>
+    </form>
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var first = document.getElementById('first')
+        var last = document.getElementById('last')
+        var email = document.getElementById('email')
+        var guest = document.getElementById('guest')
+        var date = document.getElementById('date')
+        var flight = document.getElementById('flight')
+// console.log(allInputs)
+        function validateForm(){
+            if(first.value == ''){
+                alert('Please fill your first name')
+                return false
+            }
+            if(last.value == ''){
+                alert('Please fill your last name')
+                return false
+            }
+            if(email.value == ''){
+                alert('Provide your email')
+                return false
+            }
+            if(email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+                alert('Please provide a valid email')
+                return false
+            }
+            if(guest.value == ''){
+                alert('Please fill the number of guest')
+                return false
+            }
+            if(date.value == ''){
+                alert('Please fill the date')
+                return false
+            }
+            if(flight.value == ''){
+                alert('Please fill the flight number')
+                return false
+            }
+        }
+    </script>
+</body>
+</html>
